@@ -1,0 +1,185 @@
+/* AssignmentSubmission.css */
+
+.assignment-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.assignment-container {
+  background-color: #fff;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.assignment-subheading {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #34495e;
+}
+
+.assignment-dates {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.status-table th,
+.status-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.status-table th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.submission-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.file-input {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.submit-btn,
+.edit-btn,
+.back-btn,
+.mark-as-done-btn {
+  width: 150px; 
+  height: 30px; 
+  font-size: 15px; 
+  font-family: Poppins, sans-serif; 
+  background-color: rgb(149, 196, 54); 
+  color: white; 
+  border: 1px solid rgb(62, 147, 85); 
+  border-radius: 6px;
+}
+
+.done-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.mark-as-done-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.submit-btn {
+  background-color:rgb(149, 196, 54); 
+}
+
+.submit-btn:hover {
+  background-color: #219150;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+}
+
+.edit-btn:hover {
+  background-color: #d68910;
+}
+
+.back-btn {
+  background-color: #3498db;
+}
+
+.back-btn:hover {
+  background-color: #2980b9;
+}
+
+.mark-as-done-btn {
+  background-color: rgb(149, 196, 54); 
+  margin-bottom: 1rem;
+}
+
+.mark-as-done-btn:hover {
+  background-color:rgb(149, 196, 54); 
+}
+
+.uploaded-file {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.file-upload-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete-icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #c0392b;
+  transition: color 0.3s ease;
+}
+
+.delete-icon-btn:hover {
+  color: #e74c3c;
+}
+
+
+@media (max-width: 600px) {
+  .assignment-container {
+    padding: 1rem;
+  }
+
+  .status-table th,
+  .status-table td {
+    font-size: 0.85rem;
+  }
+
+  .submit-btn,
+  .edit-btn,
+  .back-btn,
+  .mark-as-done-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+
+

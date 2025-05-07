@@ -10,6 +10,8 @@ import News from "./pages/static/News";
 import ContactUs from "./pages/static/ContactUs";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import AssignmentSubmission from "./pages/student/AssignmentSubmission";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
         <Route path="/programmes" element={<Programmes />} />
         <Route path="/news" element={<News />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/assignment" element={<AssignmentSubmission />} />
       </Routes>
       <Button/>
     
