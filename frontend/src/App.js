@@ -11,6 +11,7 @@ import ContactUs from "./pages/static/ContactUs";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import AssignmentSubmission from "./pages/student/AssignmentSubmission";
+import MarksShowing from './pages/student/MarksShowing';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/assignment" element={<AssignmentSubmission />} />
+        <Route path="/student/marks" element={<MarksShowing />} />
       </Routes>
       <Button/>
     

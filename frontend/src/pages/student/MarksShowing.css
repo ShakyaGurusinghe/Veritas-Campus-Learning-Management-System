@@ -1,0 +1,70 @@
+.marks-page {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.marks-page h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.marks-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.mark-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.mark-card:hover {
+  transform: translateY(-5px);
+}
+
+.mark-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #222;
+  font-weight: 600;
+}
+
+.mark-score {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mark-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.mark-levels p {
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.mark-levels p.active {
+  background-color: #e0f7fa;
+  color: #00796b;
+  font-weight: 600;
+}
