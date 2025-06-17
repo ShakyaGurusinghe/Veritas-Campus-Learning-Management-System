@@ -70,6 +70,7 @@ exports.cancelQuiz = async (req, res) => {
   }
 };
 
+
 exports.getQuizPerformance = async (req, res) => {
   try {
     const quiz = await Quiz.findById(req.params.id);

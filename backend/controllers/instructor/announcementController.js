@@ -64,6 +64,7 @@ exports.deleteAnnouncement = async (req, res) => {
     }
 };
 
+
 exports.getAnnouncementById = async(req, res) => {
     try {
         const announcement = await Announcement.findById(req.params.id);
