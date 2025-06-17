@@ -10,3 +10,4 @@ const announcementSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model('Announcement', announcementSchema);
+

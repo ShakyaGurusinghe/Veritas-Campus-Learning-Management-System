@@ -103,7 +103,6 @@ const QuizPerformance = () => {
           ))}
         </div>
 
-
         {/* Overview Table */}
         <h5 className="mb-3">Overview</h5>
         <table className="table table-striped">

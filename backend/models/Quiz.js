@@ -12,7 +12,6 @@ const questionSchema = new mongoose.Schema({
   correctAnswer: String,
 });
 
-
 const quizSchema = new mongoose.Schema({
   title: String,
   availability: String,

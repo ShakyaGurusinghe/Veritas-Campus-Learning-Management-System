@@ -296,4 +296,3 @@ const AddQuiz = () => {
 };
 
 export default AddQuiz;
-

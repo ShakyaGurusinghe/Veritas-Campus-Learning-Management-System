@@ -11,7 +11,6 @@ exports.addAnnouncement = async (req, res) => {
             fileUrl = `/uploads/${req.file.filename}`;
             fileName = req.file.originalname;
         }
-
         const announcementDate = new Date(date);
         
         const announcement = new Announcement({

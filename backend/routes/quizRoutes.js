@@ -10,5 +10,3 @@ router.delete('/:id', quizController.deleteQuiz);
 router.get('/:id/performance', quizController.getQuizPerformance);
 
 module.exports = router;
-
-

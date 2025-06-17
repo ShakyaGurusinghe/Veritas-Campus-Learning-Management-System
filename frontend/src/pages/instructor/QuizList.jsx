@@ -54,7 +54,6 @@ useEffect(() => {
     setDeleteTarget({ id, title });
     setShowDeleteModal(true);
   };
-  
 
   // Perform deletion
   const handleDelete = async () => {
