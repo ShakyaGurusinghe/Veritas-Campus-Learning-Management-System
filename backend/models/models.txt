@@ -1,0 +1,1 @@
+# Mongoose schemas like user, course, assignement

@@ -1,0 +1,58 @@
+.assignment-list {
+    padding: 2rem;
+  }
+  
+  .assignment-list h2 {
+    color: green;
+  }
+  
+  /* New layout styles */
+  .assignment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .assignment-header input[type="text"] {
+    margin: 0;
+    padding: 8px;
+    width: 200px;
+  }
+  
+  .add-btn, .see-performance {
+    padding: 10px 20px;
+    background-color: #61c46a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  /* See Performance centered below */
+  .see-performance-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .actions button {
+    background: none;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+  }

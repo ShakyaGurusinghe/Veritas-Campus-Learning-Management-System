@@ -1,0 +1,201 @@
+/* Responsive Media Queries for SuccessfullyRequest */
+
+/* Extra Large Devices (1200px and up) */
+@media (min-width: 1200px) {
+    .success-card {
+      max-width: 700px;
+      padding: 3rem;
+    }
+    
+    .success-title {
+      font-size: 2.5rem;
+    }
+    
+    .success-checkmark {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .check-icon {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  /* Large Devices (992px to 1199px) */
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .success-card {
+      max-width: 650px;
+      padding: 2.5rem;
+    }
+    
+    .success-title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* Medium Devices (768px to 991px) */
+  @media (max-width: 991px) {
+    .success-card {
+      max-width: 600px;
+      padding: 2rem;
+    }
+    
+    .success-title {
+      font-size: 2rem;
+    }
+    
+    .success-message {
+      font-size: 1.1rem;
+    }
+    
+    .request-id {
+      font-size: 1.1rem;
+    }
+    
+    .success-checkmark {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .check-icon {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  /* Small Devices (576px to 767px) */
+  @media (max-width: 767px) {
+    .success-container {
+      padding: 1.5rem;
+    }
+    
+    .success-card {
+      max-width: 500px;
+      padding: 1.5rem;
+    }
+    
+    .success-title {
+      font-size: 1.8rem;
+    }
+    
+    .success-message {
+      font-size: 1rem;
+    }
+    
+    .request-id {
+      font-size: 1rem;
+    }
+    
+    .next-steps h5 {
+      font-size: 1.2rem;
+    }
+    
+    .next-steps ul {
+      font-size: 0.95rem;
+    }
+    
+    .action-buttons .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Extra Small Devices (under 576px) */
+  @media (max-width: 575px) {
+    .success-container {
+      padding: 1rem;
+    }
+    
+    .success-card {
+      max-width: 100%;
+      padding: 1.25rem;
+    }
+    
+    .success-title {
+      font-size: 1.5rem;
+    }
+    
+    .success-message {
+      font-size: 0.95rem;
+    }
+    
+    .request-id {
+      font-size: 0.95rem;
+    }
+    
+    .next-steps h5 {
+      font-size: 1.1rem;
+    }
+    
+    .next-steps ul {
+      font-size: 0.9rem;
+      padding-left: 1.2rem;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+    }
+    
+    .action-buttons .btn {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .success-checkmark {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .check-icon {
+      width: 60px;
+      height: 60px;
+      border-width: 3px;
+    }
+  }
+  
+  /* For very small screens (under 400px) */
+  @media (max-width: 399px) {
+    .success-card {
+      padding: 1rem;
+    }
+    
+    .success-title {
+      font-size: 1.3rem;
+    }
+    
+    .success-message {
+      font-size: 0.85rem;
+    }
+    
+    .request-id {
+      font-size: 0.85rem;
+    }
+    
+    .next-steps h5 {
+      font-size: 1rem;
+    }
+    
+    .next-steps ul {
+      font-size: 0.85rem;
+      padding-left: 1rem;
+    }
+    
+    .action-buttons .btn {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+    }
+    
+    .success-checkmark {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .check-icon {
+      width: 50px;
+      height: 50px;
+      border-width: 3px;
+    }
+  }

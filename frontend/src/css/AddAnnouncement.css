@@ -1,0 +1,285 @@
+.add-announcement-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fdf9f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 40px 32px 32px 32px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.add-announcement-title {
+    color: #4caf50;
+    font-size: 1.6em;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.course-title {
+    color: #4caf50;
+}
+
+.add-announcement-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    margin-top: 18px;
+}
+
+.add-announcement-form input[type="text"],
+.add-announcement-form textarea,
+.custom-datepicker,
+.time-picker-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+.add-announcement-form input[type="text"]:focus,
+.add-announcement-form textarea:focus,
+.custom-datepicker:focus,
+.time-picker-select:focus {
+    outline: none;
+    border-color: #95C436;
+    box-shadow: 0 0 0 2px rgba(149, 196, 54, 0.2);
+}
+
+.add-announcement-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.calendar-popup {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calendar-popup .react-datepicker__day--selected,
+.calendar-popup .react-datepicker__day--keyboard-selected {
+    background-color: #95C436 !important;
+}
+
+.calendar-popup .react-datepicker__day:hover {
+    background-color: #b7e08a !important;
+}
+
+.calendar-popup .react-datepicker__header {
+    background-color: #f8f8f8;
+}
+
+.date-time-row {
+    display: flex;
+    gap: 32px;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+
+.date-picker-group,
+.time-picker-group {
+    flex: 1;
+}
+
+.time-label {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-weight: 500;
+    display: block;
+}
+
+.time-picker-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 4px;
+}
+
+.time-picker-select {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background: #fff;
+    margin-right: 4px;
+}
+
+.time-picker-select option:checked {
+    background-color: #95C436;
+    color: white;
+}
+
+.time-picker-select option:hover {
+    background-color: #b7e08a;
+}
+
+.ampm-select {
+    margin-left: 8px;
+}
+
+.time-separator {
+    margin: 0 4px;
+}
+
+.add-announcement-form .file-upload-box {
+    border: 2px dashed #b2b2b2;
+    border-radius: 8px;
+    background: #fff;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.add-announcement-form .file-upload-box:hover {
+    border-color: #2ecc40;
+}
+
+.add-announcement-form .file-upload-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #888;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-announcement-form .file-upload-label input[type="file"] {
+    display: none;
+}
+
+.file-upload-plus {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.file-upload-or {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.visibility-label {
+    margin-top: 18px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.add-announcement-form .visibility-options {
+    display: flex;
+    gap: 32px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+}
+
+.add-announcement-form .visibility-options label {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-announcement-form .visibility-options input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #95C436;
+}
+
+.add-announcement-form .success-message {
+    color: #2ecc40;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.add-announcement-form .error-message {
+    color: #e74c3c;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+}
+
+.save-publish-btn {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #95C436;
+    color: #fff !important;
+    border: 1px solid #3E9355;
+    border-radius: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-left: auto;
+    display: block;
+}
+
+.save-publish-btn:disabled {
+    background-color: #b7e08a;
+    cursor: not-allowed;
+}
+
+.save-publish-btn:hover:not(:disabled) {
+    background-color: #6bbf3c;
+}
+
+.file-name-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cancel-file-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 4px;
+    line-height: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancel-file-btn:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.custom-success-message {
+    display: flex;
+    align-items: center;
+    background: #95c436;
+    color: #fff;
+    border-radius: 16px;
+    padding: 8px 24px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 24px;
+    box-shadow: 0 2px 8px rgba(149, 196, 54, 0.08);
+    width: fit-content;
+    min-width: unset;
+}
+
+.sucess-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.success-text {
+    color: #fff;
+}

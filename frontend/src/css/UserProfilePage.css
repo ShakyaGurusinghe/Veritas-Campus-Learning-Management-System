@@ -1,0 +1,32 @@
+.user-profile-container {
+    padding: 20px;
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .profile-section h2 {
+    margin-top: 0;
+  }
+  
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* Add styling for avatar image if available */
+  }
+  
+  .profile-section a {
+    margin-right: 15px;
+  }
+  
+  .crud-section {
+      margin-top: 20px;
+      /* Add styles for CRUD forms if implemented directly here */
+  } 

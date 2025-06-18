@@ -1,0 +1,31 @@
+.instructor-module-container {
+    padding: 20px;
+  }
+  
+  .module-section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .module-section h3 {
+    margin-top: 0;
+  }
+  
+  /* Add basic mobile responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .module-section {
+      margin-bottom: 15px;
+      padding: 10px;
+    }
+  
+    .module-section h3,
+    .module-section h4 {
+      font-size: 1em; /* Adjust font size for smaller screens */
+    }
+  } 

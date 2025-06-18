@@ -1,0 +1,94 @@
+.edit-assignment {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fef9f9;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .edit-assignment h2 {
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .assignment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .assignment-form input[type="text"],
+  .assignment-form input[type="datetime-local"],
+  .assignment-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  .assignment-form textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .assignment-form input[type="file"] {
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .file-upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .file-upload-box:hover {
+    border-color: #2196f3;
+  }
+  
+  .visibility {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .visibility label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .assignment-form .submit-btn {
+    align-self: flex-end;
+    background-color: #2196f3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .assignment-form .submit-btn:hover {
+    background-color: #1976d2;
+  }
+  
+  .current-file {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .file-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #e91e63;
+    text-decoration: underline;
+  }
+  

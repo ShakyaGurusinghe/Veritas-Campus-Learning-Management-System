@@ -1,0 +1,124 @@
+
+/* Container */
+.support-desk-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Title */
+  .support-desk-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Description */
+  .support-desk-description {
+    font-size: 1.15rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .support-desk-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .support-desk-buttons .btn {
+    min-width: 200px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+    /* Primary button */
+  .support-desk-buttons .btn-primary {
+    background-color: #8BC34A;
+    border: none;
+  }
+  
+  .support-desk-buttons .btn-primary:hover {
+    background-color: #3E9355;
+  }
+  
+  /* Secondary button */
+  .support-desk-buttons .btn-secondary {
+    background-color: #8BC34A;
+    border: none;
+  }
+  
+  .support-desk-buttons .btn-secondary:hover {
+    background-color: #3E9355;
+  }
+
+  /* Admin button */
+  .support-desk-buttons .btn-outline-dark {
+    color: #333;
+    border-color: #333;
+    background-color: transparent;
+  }
+  
+  .support-desk-buttons .btn-outline-dark:hover {
+    background-color: #333;
+    color: white;
+  }
+
+  /* Admin Modal Styling */
+  .modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .modal-title {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .modal-body .btn-primary {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+  }
+  
+  .modal-body .btn-primary:hover {
+    background-color: #3E9355;
+    border-color: #3E9355;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .support-desk-container {
+      padding: 30px 20px;
+    }
+  
+    .support-desk-title {
+      font-size: 2rem;
+    }
+  
+    .support-desk-description {
+      font-size: 1rem;
+    }
+  
+    .support-desk-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .support-desk-buttons .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

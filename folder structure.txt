@@ -1,0 +1,51 @@
+project-root/
+│
+├── frontend/                   # React.js (with Bootstrap + Custom CSS)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/             # Images, fonts, icons, videos, etc.
+│   │   ├── css/                # Custom CSS files
+│   │   ├── bootstrap/          # Bootstrap overrides or custom themes
+│   │   ├── components/         # Reusable UI components (JS-based)
+│   │   ├── layouts/            # Role-specific layouts (JS files)
+│   │   │   ├── AdminLayout.js
+│   │   │   ├── InstructorLayout.js
+│   │   │   └── StudentLayout.js
+│   │   ├── pages/              # Route components (JS-based)
+│   │   │   ├── admin/          # Admin-specific views
+│   │   │   ├── instructor/     # Instructor-specific views
+│   │   │   ├── student/        # Student-specific views
+│   │   │   ├── auth/           # Login, Register, Forgot Password
+│   │   │   └── dashboard/      # Shared dashboards
+│   │   ├── services/           # API calls
+│   │   ├── context/            # Context API for auth, user, etc.
+│   │   ├── utils/              # Utility JS functions
+│   │   ├── App.js
+│   │   └── index.js
+│   └── index.html              # Main HTML entry
+│
+├── backend/                    # Node.js + Express.js
+│   ├── config/                 # DB connection, environment variables
+│   ├── controllers/            # Request handling logic
+│   │   ├── admin/
+│   │   ├── instructor/
+│   │   └── student/
+│   ├── middleware/             # Auth, error handling, role-check
+│   ├── models/                 # Mongoose schemas
+│   │   ├── User.js
+│   │   ├── Course.js
+│   │   └── Assignment.js
+│   ├── routes/                 # API route handlers
+│   │   ├── admin.js
+│   │   ├── instructor.js
+│   │   ├── student.js
+│   │   └── auth.js
+│   ├── utils/                  # Helpers and utilities
+│   ├── app.js
+│   └── server.js
+│
+├── .env                        # Environment variables
+├── .gitignore                  # Git ignore rules
+├── package.json                # Dependency manager
+├── README.md                   # Project documentation
+└── docs/                       # Diagrams, planning notes, documentation
