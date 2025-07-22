@@ -16,7 +16,7 @@ const AddedAnnouncement = () => {
     const [success, setSuccess] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5000/addedannouncement')
+        fetch('http://localhost:5001/addedannouncement')
             .then(res => res.json())
             .then(data => {
                 if (Array.isArray(data)) {

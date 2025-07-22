@@ -15,8 +15,10 @@ export default function ViewAnnouncements() {
   const [announcements, setAnnouncement] = useState([]);
 
   useEffect(() => {
-    if (data) {
+    if (data && Array.isArray(data.data)) {
       setAnnouncement(data.data);
+    } else {
+      setAnnouncement([]);
     }
   }, [data]);
   console.log(announcements);
@@ -36,29 +38,29 @@ export default function ViewAnnouncements() {
     <div>
       <h1 className="text-2xl font-bold mb-4">All Announcements</h1>
 
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
-          <thead class="text-xs text-white uppercase bg-green-500 ">
+      <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
+          <thead className="text-xs text-white uppercase bg-green-500 ">
             <tr>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Title
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Date
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Done By
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Status
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Message
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Send To
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 Action
               </th>
             </tr>
@@ -66,12 +68,12 @@ export default function ViewAnnouncements() {
           <tbody>
             {announcements.map((announcement) => (
               <tr
-                key={announcement.id}
+                key={announcement._id}
                 className="bg-white border-b border-gray-200 hover:bg-gray-50"
               >
-                <th className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                   {announcement.title}
-                </th>
+                </td>
                 <td className="px-6 py-4">
                   {announcement.createdAt
                     ? new Date(announcement.createdAt).toLocaleDateString(

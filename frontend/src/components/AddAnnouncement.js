@@ -27,7 +27,7 @@ const AddAnnouncement = () => {
     if (success) {
       const timer = setTimeout(() => {
         setSuccess('');
-      }, 5000);
+      }, 5001);
       return () => clearTimeout(timer);
     }
   }, [success]);
@@ -133,7 +133,7 @@ const AddAnnouncement = () => {
     if (form.file) formData.append('file', form.file);
 
     try {
-      const res = await fetch('http://localhost:5000/addannouncement', {
+      const res = await fetch('http://localhost:5001/addannouncement', {
         method: 'POST',
         body: formData,
       });

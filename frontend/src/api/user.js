@@ -6,7 +6,7 @@ export const getCurrentUser = async () => {
   const role = localStorage.getItem("userRole");
 
   const endpointMap = {
-    student: "http://localhost:5000/api/me",
+    student: "http://localhost:5001/api/me",
     // instructor: "/api/instructors/me", // placeholder for future
     // admin: "/api/admins/me",          // placeholder for future
   };

@@ -27,7 +27,7 @@ const UpdateAnnouncement = () => {
     if (success) {
       const timer = setTimeout(() => {
         setSuccess('');
-      }, 5000);
+      }, 5001);
       setForm({
         title: '',
         date: null,
@@ -47,7 +47,7 @@ const UpdateAnnouncement = () => {
     const fetchAnnouncementDetails = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/updateannouncement/${id}`);
+        const response = await fetch(`http://localhost:5001/updateannouncement/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch announcement details');
         }
@@ -211,7 +211,7 @@ const UpdateAnnouncement = () => {
     if (form.file) formData.append('file', form.file);
 
     try {
-      const res = await fetch(`http://localhost:5000/updateannouncement/${id}`, {
+      const res = await fetch(`http://localhost:5001/updateannouncement/${id}`, {
         method: 'PUT',
         body: formData,
       });
